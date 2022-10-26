@@ -23,7 +23,6 @@ jobs:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
        preCommands: |
-        wrangler whoami
         wrangler --version
         # wrangler secret:bulk ./example.secrets.json
        postCommands: |
