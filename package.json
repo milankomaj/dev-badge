@@ -1,0 +1,39 @@
+{
+  "name": "dev-badge",
+  "version": "0.0.2",
+  "description": "Badges with Cloudflare Workers",
+  "main": "dist/worker.js",
+  "scripts": {
+    "dev": "NODE_ENV=development wrangler dev --env development",
+    "pro": "wrangler dev --env production",
+    "local": "NODE_ENV=development wrangler dev --local --env development",
+    "build": "webpack --config webpack.config.js",
+    "deploy": "wrangler publish",
+    "NpmInstall": "npm install --save",
+    "secrets-deploy": "wrangler secret:bulk ./example.secrets.json",
+    "tail-json": "wrangler tail --format json",
+    "tail-pretty": "wrangler tail --format pretty",
+    "tail-log": "wrangler tail --search 👉",
+    "miniflare": "NODE_ENV=development miniflare ./dist/development_worker.js --watch --debug --env ./.dev.vars --wrangler-env --no-update-check"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "badges"
+  ],
+  "author": "www",
+  "license": "MIT",
+  "dependencies": {
+    "badgen": "^3.2.2",
+    "byte-size": "^8.1.0",
+    "cloudworker-router": "^1.12.2",
+    "date-fns": "^2.29.3",
+    "dev-badge-icon": "^1.0.15",
+    "millify": "^5.0.1"
+  },
+  "devDependencies": {
+    "miniflare": "^2.10.0",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
