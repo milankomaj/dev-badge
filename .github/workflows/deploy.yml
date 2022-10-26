@@ -27,3 +27,5 @@ jobs:
         # wrangler secret:bulk ./example.secrets.json
        postCommands: |
         wrangler secret list
+    env:
+     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
