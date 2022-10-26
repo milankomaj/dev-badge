@@ -1,5 +1,5 @@
 // http://127.0.0.1:8787/youtube/video/WYCpibS2xM0
-// https://dev-badge.eleonora.workers.dev/youtube/video/WYCpibS2xM0
+// https://dev-badge.xxx.workers.dev/youtube/video/WYCpibS2xM0
 // http://127.0.0.1:8787/youtube/channel/UCWLCN-t9KAkbw3lwiNWLogg
 
 async function handleYoutube({ topic, id }) {
@@ -41,4 +41,4 @@ async function handleYoutube({ topic, id }) {
         }
     } else { return { subject: "Response " + resp.status, status: resp.statusText, labelColor: "grey" } }
 }
-export default handleYoutube              
+export default handleYoutube

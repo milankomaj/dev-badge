@@ -1,5 +1,5 @@
 // http://127.0.0.1:8787/lastfm/last-played/last_fm_M?icon=lastfm&style=flat&scale=1.5
-// https://dev-badge.eleonora.workers.dev/lastfm/top-track/last_fm_M/12month
+// https://dev-badge.xxx.workers.dev/lastfm/top-track/last_fm_M/12month
 import { formatDistanceToNow } from 'date-fns';
 
 async function handleLastfm({
