@@ -1,0 +1,29 @@
+name: Deploy
+on:
+  workflow_dispatch:
+  pull_request_target:
+    branches: '**'
+    types: [closed]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+       node-version: '16'
+    - run: npm ci
+
+    - name: Publish
+      uses: cloudflare/wrangler-action@2.0.0
+      with:
+       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+       preCommands: |
+        wrangler --version
+        # wrangler secret:bulk ./example.secrets.json
+       postCommands: |
+        wrangler secret list
