@@ -18,7 +18,7 @@ const topicMap = {
 
 async function restGithub(path, preview = "hellcat") {
   const headers = {
-    authorization: `token ${GITHUB_TOKEN}`,
+    authorization: `token ${TOKEN_GITHUB}`,
     accept: `application/vnd.github.${preview}-preview+json`,
     "User-Agent": "Awesome-Octocat-App",
   };
@@ -28,7 +28,7 @@ async function restGithub(path, preview = "hellcat") {
 
 async function queryGithub(query) {
   const headers = {
-    authorization: `token ${GITHUB_TOKEN}`,
+    authorization: `token ${TOKEN_GITHUB}`,
     accept: "application/vnd.github.hawkgirl-preview+json",
     "User-Agent": "Awesome-Octocat-App",
     "Content-Type": "application/json",
