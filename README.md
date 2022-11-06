@@ -10,9 +10,10 @@
 > [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/milankomaj/dev-badge)
 
 ```mermaid
+%%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
 flowchart LR
 
-A>Build`s on Github.] ==>B
+A>Build`s on Github.] ==>|"#10067;"| B
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork repositori")
 B(("🟢")) .->E("Template repositori")
