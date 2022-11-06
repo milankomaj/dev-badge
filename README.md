@@ -1,6 +1,6 @@
 # dev-badge
 
-[![Badge v.2](https://dev-badge.eleonora.workers.dev?&style=flat&scale=3)](https://dev-badge.eleonora.workers.dev?&style=flat&scale=3)
+[![Badge v.2](https://dev-badge.eleonora.workers.dev?&style=flat&scale=3)](https://github.com/milankomaj/dev-badge)
 
 
 
