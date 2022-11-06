@@ -17,7 +17,7 @@ flowchart LR
 A>Build`s on Github.] ==>|"#10067;"| B
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork repositori")
-B(("🟢")) .->E("Template repositori")
+B(("🟢")) .->E("Use this template")
 C & D & E -...->|additional steps| F("Run workflow") 
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
