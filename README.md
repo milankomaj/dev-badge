@@ -11,13 +11,13 @@
 
 ```mermaid
 flowchart LR
-
+id1>Build`s on Github.]
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork repositori")
 B(("🟢")) .->E("Template repositori")
 C & D & E -...->|additional steps| F("Run workflow") 
 
-id1>Build`s on Github.]
+
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
 style C fill:#404242,color:#fefefe
