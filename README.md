@@ -15,7 +15,7 @@ flowchart LR
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork repositori")
 B(("🟢")) .->E("Template repositori")
-C & D & E -...-> F("Run workflow") 
+C & D & E -...->|additional steps| F("Run workflow") 
 
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
