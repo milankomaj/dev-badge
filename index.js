@@ -30,12 +30,12 @@ async function routeHandler(ctx, handler) {
   ctx.body = body;
   ctx.response.headers = {
     'content-type': 'image/svg+xml',
-    'Cache-Control': `max-age=${_hh ? _hh : config.defaultCacheDurationSecond},immutable`,
+    'CDN-Cache-Control': `max-age=${_hh ? _hh : config.defaultCacheDurationSecond}`,
+    'Cache-Control': `max-age=${_hh ? _hh : config.defaultCacheDurationSecond},immutable, s-max-age=${_hh ? _hh : config.defaultCacheDurationSecond}`,
     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, HEAD',
     'dev-badge': `v.2.0-${country}-${ip}-${colo}-${http}-${tls}-${region}-${asn}-${method}`,
     'Access-Control-Allow-Origin': '*',
-    'X-Content-Type-Options': 'nosniff',
-    'Alt-Svc': `h3=":443"; ma=${_hh ? _hh : config.defaultCacheDurationSecond}, h3-29=":443"; ma=${_hh ? _hh : config.defaultCacheDurationSecond}, h3-25=":443"; ma=${_hh ? _hh : config.defaultCacheDurationSecond}, h2=":443"; ma=${_hh ? _hh : config.defaultCacheDurationSecond}`
+    'X-Content-Type-Options': 'nosniff'
   };
   ctx.status = 200;
   // console.log("👉 log:",hhPatch,Object.values(ctx.response.headers).toString())
