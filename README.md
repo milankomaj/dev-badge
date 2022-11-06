@@ -10,11 +10,22 @@
 > [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/milankomaj/dev-badge)
 
 ```mermaid
-flowchart TD
-    B[":relaxed:"]
-    B-->C[:relaxed:]
-    B-->D(:relaxed:);
-    B-->E(:relaxed: ?)
+flowchart LR
+
+B(("🟢")) .->C("Deploy with Workers")
+B(("🟢")) .->D("Fork repositori")
+B(("🟢")) .->E("Template repositori")
+C & D & E -...-> F("Run workflow") 
+
+style F fill:#f6f8fa,stroke:#333,stroke-width:2px
+style C fill:#404242,color:#fefefe
+style D fill:#f6f8fa,stroke:#e9eaec
+style E fill:#2da44e,stroke-width:0px
+style F fill:#f6f8fa,stroke:#e9eaec
+
+
+
+
 ```
 
 > [![Deploy](https://github.com/milankomaj/dev-badge/actions/workflows/deploy.yml/badge.svg)](https://github.com/milankomaj/dev-badge/actions/workflows/deploy.yml)
