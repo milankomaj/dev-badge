@@ -24,9 +24,9 @@ style D fill:#f6f8fa,stroke:#e9eaec
 style E fill:#2da44e,stroke-width:0px
 style F fill:#f6f8fa,stroke:#e9eaec
 
-click C "https://deploy.workers.cloudflare.com/?url=https://github.com/milankomaj/dev-badge"
 click D "https://github.com/milankomaj/dev-badge/fork"
 click E "https://github.com/milankomaj/dev-badge/generate"
+
 
 ```
 
