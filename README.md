@@ -11,13 +11,12 @@
 
 ```mermaid
 flowchart LR
-id1>Build`s on Github.]
+
+A>Build`s on Github.] ==>B
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork repositori")
 B(("🟢")) .->E("Template repositori")
 C & D & E -...->|additional steps| F("Run workflow") 
-
-
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
 style C fill:#404242,color:#fefefe
@@ -26,6 +25,7 @@ style E fill:#2da44e,stroke-width:0px,color:#ffffff
 style F fill:#f6f8fa,stroke:#e9eaec
 style id1 fill:#0969da,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 2 2
 
+click A "https://github.com/milankomaj/dev-badge"
 click D "https://github.com/milankomaj/dev-badge/fork"
 click E "https://github.com/milankomaj/dev-badge/generate"
 
