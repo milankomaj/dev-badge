@@ -42,7 +42,7 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 > #### Build localy.
 > - [ ] Start[^note]
 > - 1️⃣ clone/download [repository](https://github.com/milankomaj/dev-badge)
-> - 2️⃣ npm install ```  npm run NpmInstall  ``` 
+> - 2️⃣ ``` npm install  ```  or   ```  npm run NpmInstall  ``` 
 > - 3️⃣ [development:](/package.json)
 >   - ```  npm run dev  ``` 
 >   - or ```  npm run local  ``` 
