@@ -60,7 +60,7 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 
 [^1]: some services/mods need secrets/keys 🗝️
 [^note]:
-    prerequisites: *node, npm, wrangler*
+    prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
  ---  
  > ##### Credits and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
