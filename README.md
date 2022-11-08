@@ -58,7 +58,7 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 >   - or ```  wrangler publish  ```  
 > - [x] Done
 
-[^1]: some services/[*mods*](/mods) need secrets/keys :key:
+[^1]: some services/[*mods*](/mods) need secrets/keys[^1] :key:
 [^note]:
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
