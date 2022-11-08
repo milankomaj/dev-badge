@@ -47,18 +47,18 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 >   - ```  npm run dev  ``` 
 >   - or ```  npm run local  ``` 
 >   - or ```  npm run miniflare  ```      
->   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file[^1]
+>   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >     - ```  localhost:8787  ``` 
 > - :four: [production:](/package.json)
 >   - ```  npm run pro  ``` 
 >     - ```  localhost:8787  ```
->   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file[^1]   
+>   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]   
 > - :five: [publish:](/package.json)
 >   - ```  npm run deploy  ``` 
 >   - or ```  wrangler publish  ```  
 > - [x] Done
 
-[^1]: some services/[*mods*](/mods) need secrets/keys[^1] :key:
+[^1]: some services/[*mods*](/mods) need secrets/keys :key:
 [^note]:
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
