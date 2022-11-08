@@ -41,24 +41,24 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 
 > #### Build localy.
 > - [ ] Start[^note]
-> - 1️⃣ clone/download [repository](https://github.com/milankomaj/dev-badge)
-> - 2️⃣ ``` npm install  ```  or   ```  npm run NpmInstall  ``` 
-> - 3️⃣ [development:](/package.json)
+> - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
+> - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ``` 
+> - :three: [development:](/package.json)
 >   - ```  npm run dev  ``` 
 >   - or ```  npm run local  ``` 
 >   - or ```  npm run miniflare  ```      
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file[^1]
 >     - ```  localhost:8787  ``` 
-> - 4️⃣ [production:](/package.json)
+> - :four: [production:](/package.json)
 >   - ```  npm run pro  ``` 
 >     - ```  localhost:8787  ```
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file[^1]   
-> - 5️⃣ [publish:](/package.json)
+> - :five: [publish:](/package.json)
 >   - ```  npm run deploy  ``` 
 >   - or ```  wrangler publish  ```  
 > - [x] Done
 
-[^1]: some services/[*mods*](/mods) need secrets/keys 🗝️
+[^1]: some services/[*mods*](/mods) need secrets/keys :key:
 [^note]:
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
