@@ -43,17 +43,17 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 > - [ ] Start[^note]
 > - 1️⃣ clone/download [repository](https://github.com/milankomaj/dev-badge)
 > - 2️⃣ npm install ```  npm run NpmInstall  ``` 
-> - 3️⃣ [development:]()
+> - 3️⃣ [development:](/)
 >   - ```  npm run dev  ``` 
 >   - or ```  npm run local  ``` 
 >   - or ```  npm run miniflare  ```      
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file[^1]
 >     - ```  localhost:8787  ``` 
-> - 4️⃣ [production:]()
+> - 4️⃣ [production:](/)
 >   - ```  npm run pro  ``` 
 >     - ```  localhost:8787  ```
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file[^1]   
-> - 5️⃣ [publish:]()
+> - 5️⃣ [publish:](/)
 >   - ```  npm run deploy  ``` 
 >   - or ```  wrangler publish  ```  
 > - [x] Done
