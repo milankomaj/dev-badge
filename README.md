@@ -2,7 +2,7 @@
 
 [![Badge v.2](https://dev-badge.eleonora.workers.dev?&style=flat&scale=3)](https://github.com/milankomaj/dev-badge)
 
-> ##### live [example](https://milankomaj.github.io/site-dev-badge)      |    build your owns
+> ##### live [example](https://milankomaj.github.io/site-dev-badge) preview     |    build your owns
 
 ---
 
