@@ -2,7 +2,7 @@
 
 [![Badge v.2](https://dev-badge.eleonora.workers.dev?&style=flat&scale=3)](https://github.com/milankomaj/dev-badge)
 
-> ##### live [example](https://milankomaj.github.io/site-dev-badge) preview     |    build your owns
+> ##### live [example](https://milankomaj.github.io/site-dev-badge) preview     |    create your owns
 
 ---
 
@@ -63,5 +63,5 @@ click E "https://github.com/milankomaj/dev-badge/generate"
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
  ---  
- > ##### Credits and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
+ > ##### related and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
 
