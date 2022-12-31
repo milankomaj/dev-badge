@@ -51,8 +51,8 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 >     - ```  localhost:8787  ``` 
 > - :four: [production:](/package.json)
 >   - ```  npm run pro  ``` 
->     - ```  localhost:8787  ```
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]   
+>     - ```  localhost:8787  ```
 > - :five: [publish:](/package.json)
 >   - ```  npm run deploy  ``` 
 >   - or ```  wrangler publish  ```  
