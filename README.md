@@ -16,22 +16,24 @@ flowchart LR
 
 A>Build`s on Github.] ==>|"#10067;"| B
 X("secrets") .->B(("🟢"))
+G("#10094;#10095;  Code #9207; Codespaces")<.->B(("🟢"))
 B(("🟢")) .->C("Deploy with Workers")
-B(("🟢")) .->D("Fork repositori")
-B(("🟢")) .->E("Use this template")
-C & D & E -...->|"additional steps"| F("Run workflow") 
+B(("🟢")) .->D("Fork #9207; repositori")
+B(("🟢")) .->E("Use this template #9207;")
+C & D & E -..->|"additional steps"| F("Run workflow") 
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
 style C fill:#404242,color:#fefefe
 style D fill:#f6f8fa,stroke:#e9eaec
 style E fill:#2da44e,stroke-width:0px,color:#ffffff
 style F fill:#f6f8fa,stroke:#e9eaec
+style G fill:#f6f8fa,stroke:#d1d2d4,stroke-width:2px
 style A fill:#0969da,stroke:#333,stroke-width:2px,color:#fff,stroke-dasharray: 2 2
 
 click A "https://github.com/milankomaj/dev-badge"
 click D "https://github.com/milankomaj/dev-badge/fork"
 click E "https://github.com/milankomaj/dev-badge/generate"
-
+click G "https://github.com/codespaces"
 
 ```
 
