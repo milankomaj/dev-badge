@@ -15,7 +15,7 @@
 flowchart LR
 
 A>Build`s on Github.] ==>|"#10067;"| B
-X("secrets") .->B(("🟢"))
+X("secrets") .->|"{#133;}"|B(("🟢"))
 G("#10094;#10095;  Code #9207; Codespaces")<.->B(("🟢"))
 B(("🟢")) .->C("Deploy with Workers")
 B(("🟢")) .->D("Fork #9207; repositori")
