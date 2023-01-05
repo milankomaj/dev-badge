@@ -14,13 +14,14 @@
 %%{ init: { 'flowchart': { 'curve': 'stepAfter' } } }%%
 flowchart LR
 
-A>Build`s on Github.] ==>|"#10067;"| B
+A>Build`s on Github.] ==> |"#10067;"| B
 X("secrets/keys") .->|"{#133;}"|B(("🟢"))
-G("#10094;#10095;  Code #9207; Codespaces")<.->B(("🟢"))
-B(("🟢")) .->C("Deploy with Workers")
-B(("🟢")) .->D("Fork #9207; repositori")
-B(("🟢")) .->E("Use this template #9207;")
-C & D & E -..->|"additional steps"| F("Run workflow") 
+G("#10094;#10095;  Code #9207; Codespaces") <.-> B(("🟢"))
+B(("🟢")) <---> C("Deploy with Workers")
+B(("🟢")) <---> D("Fork #9207; repositori")
+B(("🟢")) <---> E("Use this template #9207;")
+C & D & E -..-> |"additional steps"| F("Run workflow") 
+
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
 style C fill:#404242,color:#fefefe
