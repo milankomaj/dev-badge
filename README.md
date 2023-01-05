@@ -46,19 +46,19 @@ click G "https://github.com/codespaces"
 > #### Build localy.
 > - [ ] **Start**  [^note]
 > - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
-> - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ``` 
+> - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ```  [:link:](/package.json#L12)
 > - :three: [**development:**](/package.json)
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
->   - ```  npm run dev  ``` 
->   - or ```  npm run local  ``` 
->   - or ```  npm run miniflare  ```      
+>   - ```  npm run dev  ```  [:link:](/package.json#L7)
+>   - or ```  npm run local  ```  [:link:](/package.json#L9)
+>   - or ```  npm run miniflare  ```  [:link:](/package.json#L17)      
 >     -   [*localhost:8787*](//localhost:8787) 
-> - :four: [**production:**](/package.json)
+> - :four: [**production:**](/package.json#L8)
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]  
->   - ```  npm run pro  ```  
+>   - ```  npm run pro  ```   [:link:](/package.json#L8)   
 >     -   [*localhost:8787*](//localhost:8787)  
 > - :five: [**publish:**](/package.json)
->   - ```  npm run deploy  ``` 
+>   - ```  npm run deploy  ```   [:link:](/package.json#L11) 
 >   - or ```  wrangler publish  ```  
 > - [x] **Done**
 
