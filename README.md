@@ -34,7 +34,7 @@ click A "https://github.com/milankomaj/dev-badge"
 click D "https://github.com/milankomaj/dev-badge/fork"
 click E "https://github.com/milankomaj/dev-badge/generate"
 click G "https://github.com/codespaces"
-click X "https://github.com/milankomaj/dev-badge/blob/master/README.md#user-content-fn-1-0a72c130f61a53b8cd8e92bd2452dcce"
+click X "https://github.com/milankomaj/dev-badge#user-content-fn-1-0cf14757d2bcea08ed7aaa6731d6d60b"
 
 ```
 
