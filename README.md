@@ -40,23 +40,23 @@ click E "https://github.com/milankomaj/dev-badge/generate"
 ---
 
 > #### Build localy.
-> - [ ] Start[^note]
+> - [ ] **Start**  [^note]
 > - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
 > - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ``` 
-> - :three: [development:](/package.json)
+> - :three: [**development:**](/package.json)
+>   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >   - ```  npm run dev  ``` 
 >   - or ```  npm run local  ``` 
 >   - or ```  npm run miniflare  ```      
->   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
->     - ```  localhost:8787  ``` 
-> - :four: [production:](/package.json)
->   - ```  npm run pro  ``` 
->   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]   
->     - ```  localhost:8787  ```
-> - :five: [publish:](/package.json)
+>     -   [*localhost:8787*](//localhost:8787) 
+> - :four: [**production:**](/package.json)
+>   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]  
+>   - ```  npm run pro  ```  
+>     -   [*localhost:8787*](//localhost:8787)  
+> - :five: [**publish:**](/package.json)
 >   - ```  npm run deploy  ``` 
 >   - or ```  wrangler publish  ```  
-> - [x] Done
+> - [x] **Done**
 
 [^1]: some services/[*mods*](/mods) need secrets/keys :key:
 [^note]:
