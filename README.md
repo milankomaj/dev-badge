@@ -62,7 +62,7 @@ click G "https://github.com/codespaces"
 >   - or ```  wrangler publish  ```  
 > - [x] **Done**
 
-[^1]: some services/[*mods*](/dev-badge/tree/master/mods) need secrets/keys :key:
+[^1]: some services/[*mods*](dev-badge/tree/master/mods) need secrets/keys :key:
 [^note]:
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
 
