@@ -28,7 +28,7 @@
     "cloudworker-router": "^1.12.2",
     "date-fns": "^2.29.3",
     "dev-badge-icon": "^1.0.15",
-    "millify": "^5.0.1"
+    "millify": "^6.1.0"
   },
   "devDependencies": {
     "miniflare": "^2.10.0",
