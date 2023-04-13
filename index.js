@@ -73,8 +73,6 @@ const handlerMap = {
 
   '/amo/:topic/:pkgName': handlers.amo,
 
-  '/securityheaders/:domain': handlers.securityheaders,
-
   '/mozilla/:topic/:domain': handlers.mozilla,
 
   '/jsdelivr/:topic/:period/:type/:name': handlers.jsdelivr,
