@@ -15,7 +15,7 @@ const statuses = [
 async function handleTravisCI({ user, repo, branch = "master" }, options) {
 
 
-  const org = await fetch(`https://api.travis-ci.org/${user}/${repo}.svg?branch=${branch}`);
+  const org = await fetch(`https://app.travis-ci.com/${user}/${repo}.svg?branch=${branch}`);
 
 
   const svgOrg  = await org.text()

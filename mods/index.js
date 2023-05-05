@@ -8,7 +8,6 @@ import packagephobia from "./packagephobia";
 import travis from "./travis";
 import vsmarketplace from "./vs-marketplace";
 import amo from "./amo";
-import securityheaders from "./securityheaders";
 import mozilla from "./mozilla";
 import jsdelivr from "./jsdelivr";
 import uptime from "./uptime";
@@ -32,7 +31,6 @@ export {
   vsmarketplace,
   amo,
   mozilla,
-  securityheaders,
   jsdelivr,
   uptime,
   lastfm,
