@@ -21,6 +21,7 @@ jobs:
       uses: cloudflare/wrangler-action@2.0.0
       with:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+       wranglerVersion: '2.20.0'
        command: publish
        preCommands: |
         wrangler --version
