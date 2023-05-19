@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "miniflare": "^2.14.0",
-    "terser-webpack-plugin": "^5.3.8",
+    "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.83.1",
     "webpack-cli": "^5.1.1"
   }
