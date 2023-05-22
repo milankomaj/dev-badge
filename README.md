@@ -58,7 +58,7 @@ click G "https://github.com/codespaces"
 >    - or ``` wrangler dev --remote ```      
 >     -   [*localhost:8787*](//localhost:8787)  
 > - :five: [**publish:**](/package.json)
->   - ```  npm run publish  ```   [:link:](/package.json#L11) 
+>   - ```  npm run publish  ```   [:link:](/package.json#L10) 
 >   - or ```  wrangler deploy  ```  
 > - [x] **Done**
 
