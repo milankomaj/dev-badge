@@ -29,7 +29,6 @@
     "millify": "^6.1.0"
   },
   "devDependencies": {
-    "miniflare": "^2.14.0",
     "terser-webpack-plugin": "^5.3.8",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1"
