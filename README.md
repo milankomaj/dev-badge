@@ -64,7 +64,7 @@ click G "https://github.com/codespaces"
 
 [^1]: some services/[*mods*](dev-badge/tree/master/mods) need secrets/keys :key:
 [^note]:
-    prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler* (>3.0.0)](https://workers.cloudflare.com/)
+    prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler* (>= 3.0.0)](https://workers.cloudflare.com/)
 
  ---  
  > ##### related and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
