@@ -50,21 +50,21 @@ click G "https://github.com/codespaces"
 > - :three: [**development:**](/package.json)
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >   - ```  npm run dev  ```  [:link:](/package.json#L7)
->   - or ```  npm run local  ```  [:link:](/package.json#L9)
->   - or ```  npm run miniflare  ```  [:link:](/package.json#L17)      
+>   - or ```  wrangler dev  ```   
 >     -   [*localhost:8787*](//localhost:8787) 
 > - :four: [**production:**](/package.json#L8)
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]  
->   - ```  npm run pro  ```   [:link:](/package.json#L8)   
+>   - ```  npm run pro  ```   [:link:](/package.json#L8)
+>    - or ``` wrangler dev --remote ```      
 >     -   [*localhost:8787*](//localhost:8787)  
 > - :five: [**publish:**](/package.json)
->   - ```  npm run deploy  ```   [:link:](/package.json#L11) 
->   - or ```  wrangler publish  ```  
+>   - ```  npm run publish  ```   [:link:](/package.json#L11) 
+>   - or ```  wrangler deploy  ```  
 > - [x] **Done**
 
 [^1]: some services/[*mods*](dev-badge/tree/master/mods) need secrets/keys :key:
 [^note]:
-    prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler*](https://workers.cloudflare.com/)
+    prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler* (>3.0.0)](https://workers.cloudflare.com/)
 
  ---  
  > ##### related and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
