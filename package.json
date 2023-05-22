@@ -7,7 +7,7 @@
     "dev": "wrangler dev",
     "pro": "wrangler dev --remote",
     "deploy": "wrangler deploy",
-    "install": "npm install --save",
+    "NpmInstall": "npm install --save",
     "secrets-deploy": "wrangler secret:bulk ./example.secrets.json",
     "tail-json": "wrangler tail --format json",
     "tail-pretty": "wrangler tail --format pretty",
