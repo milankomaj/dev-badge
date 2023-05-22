@@ -1,5 +1,5 @@
 name = "dev-badge"
-main = "./dist/worker.js"
+main = "./index.js"
 workers_dev = true
 compatibility_date = "2022-08-04"
 send_metrics = false

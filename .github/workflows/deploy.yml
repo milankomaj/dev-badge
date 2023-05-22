@@ -21,7 +21,7 @@ jobs:
       uses: cloudflare/wrangler-action@2.0.0
       with:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-       command: publish
+       command: deploy
        preCommands: |
         wrangler --version
         # wrangler secret:bulk ./example.secrets.json
