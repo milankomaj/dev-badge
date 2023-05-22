@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
        node-version: 'latest'
-    - run: npm install
+    - run: npm install --save
 
     - name: Publish
       uses: cloudflare/wrangler-action@2.0.0
