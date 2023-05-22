@@ -4,17 +4,14 @@
   "description": "Badges with Cloudflare Workers",
   "main": "dist/worker.js",
   "scripts": {
-    "dev": "NODE_ENV=development wrangler dev --env development",
-    "pro": "wrangler dev --env production",
-    "local": "NODE_ENV=development wrangler dev --local --env development",
-    "build": "webpack --config webpack.config.js",
-    "deploy": "wrangler publish",
+    "dev": "wrangler dev",
+    "pro": "wrangler dev --remote",
+    "deploy": "wrangler deploy",
     "NpmInstall": "npm install --save",
     "secrets-deploy": "wrangler secret:bulk ./example.secrets.json",
     "tail-json": "wrangler tail --format json",
     "tail-pretty": "wrangler tail --format pretty",
-    "tail-log": "wrangler tail --search 👉",
-    "miniflare": "NODE_ENV=development miniflare ./dist/development_worker.js --watch --debug --env ./.dev.vars --wrangler-env --no-update-check"
+    "tail-log": "wrangler tail --search 👉"
   },
   "keywords": [
     "cloudflare-worker",
