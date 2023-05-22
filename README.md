@@ -46,7 +46,7 @@ click G "https://github.com/codespaces"
 > #### Build localy.
 > - [ ] **Start**  [^note]
 > - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
-> - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ```  [:link:](/package.json#L12)
+> - :two: ``` npm install  ```  or   ```  npm run NpmInstall  ```  [:link:](/package.json#L11)
 > - :three: [**development:**](/package.json)
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >   - ```  npm run dev  ```  [:link:](/package.json#L7)
