@@ -20,7 +20,7 @@ G("#10094;#10095;  Code #9207; Codespaces") <.-> B(("🟢"))
 B(("🟢")) --> C("Deploy with Workers")
 B(("🟢")) --> D("#10971; Fork #9207; ")
 B(("🟢")) --> E("Use this template #9207;")
-C & D & E -..-> |"additional steps"| F("Run workflow") 
+C & D & E -..-> |"additional steps"| F("Run workflow")
 
 
 style F fill:#f6f8fa,stroke:#333,stroke-width:2px
@@ -50,22 +50,21 @@ click G "https://github.com/codespaces"
 > - :three: [**development:**](/package.json)
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >   - ```  npm run dev  ```  [:link:](/package.json#L7)
->   - or ```  wrangler dev  ```   
->     -   [*localhost:8787*](//localhost:8787) 
+>   - or ```  wrangler dev  ```
+>     -   [*localhost:8787*](//localhost:8787)
 > - :four: [**production:**](/package.json#L8)
->   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]  
+>   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]
 >   - ```  npm run pro  ```   [:link:](/package.json#L8)
->    - or ``` wrangler dev --remote ```      
->     -   [*localhost:8787*](//localhost:8787)  
+>    - or ``` wrangler dev --remote ```
+>     -   [*localhost:8787*](//localhost:8787)
 > - :five: [**publish:**](/package.json)
->   - ```  npm run publish  ```   [:link:](/package.json#L10) 
->   - or ```  wrangler deploy  ```  
+>   - ```  npm run publish  ```   [:link:](/package.json#L10)
+>   - or ```  wrangler deploy  ```
 > - [x] **Done**
 
 [^1]: some services/[*mods*](dev-badge/tree/master/mods) need secrets/keys :key:
 [^note]:
     prerequisites: [*node*](https://nodejs.org), [*npm*](https://www.npmjs.com/), [*wrangler* (>= 3.0.0)](https://workers.cloudflare.com/)
 
- ---  
- > ##### related and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge*](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)   
-
+ ---
+ > ##### related and similar projects: [*badgen*](https://github.com/badgen/badgen.net), [*webadge* 🌟](https://github.com/tuananh/webadge.dev), [*shields*](https://github.com/badges/shields)
