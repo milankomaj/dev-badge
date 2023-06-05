@@ -24,8 +24,8 @@ async function handleYoutube({ topic, id }) {
         const videoCount = json.items['0'].statistics.videoCount
         const title = json.items['0'].snippet.title
         const topicMap = {
-            video: ["👀 " + viewCount + " 👍🏻 " + likeCount, title],
-            channel: ["👀 " + viewCount + " subscriber: " + subscriberCount, title +  " : " + videoCount]
+            video: ["👀: " + viewCount + "  👍🏻: " + likeCount, title],
+            channel: ["👀: " + viewCount + "  subscriber: " + subscriberCount, title +  " : " + videoCount]
         };
         const _statusMap = topicMap[topic];
 
