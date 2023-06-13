@@ -42,12 +42,6 @@ async function handleBundlephobia({ topic, pkgName }, options) {
           status: isTreeShakeable ? "supported" : "not supported",
           color: isTreeShakeable ? "green" : "red",
         };
-      default:
-        return {
-          subject: "bundlephobia",
-          status: "unknown",
-          color: "grey",
-        };
     }
   } else { return { subject: "Response " + resp.status, status: resp.statusText, labelColor: "grey" } }
 }
