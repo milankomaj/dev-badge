@@ -49,12 +49,7 @@ async function handleBundlephobia({ topic, pkgName }, options) {
           color: "grey",
         };
     }
-  }
-  return {
-    subject: "bundlephobia",
-    status: "unknown",
-    color: "grey",
-  };
+  } else { return { subject: "Response " + resp.status, status: resp.statusText, labelColor: "grey" } }
 }
 
 export default handleBundlephobia;
