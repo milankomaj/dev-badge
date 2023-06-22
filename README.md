@@ -55,7 +55,7 @@ click G "https://github.com/codespaces"
 > - :four: [**production:**](/package.json#L8)
 >   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]
 >   - ```  npm run pro  ```   [:link:](/package.json#L8)
->    - or ``` wrangler dev --remote ```
+>   - or ```  wrangler dev --remote  ```
 >     -   [*localhost:8787*](//localhost:8787)
 > - :five: [**publish:**](/package.json)
 >   - ```  npm run publish  ```   [:link:](/package.json#L10)
