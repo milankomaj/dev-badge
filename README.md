@@ -48,7 +48,7 @@ click G "https://github.com/codespaces"
 > - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
 > - :two: ``` npm run NpmInstall  ```  [:link:](/package.json#L11)
 >   - or ```  npm install  ```
-> - :three: [**development:**](/package.json)
+> - :three: [**development:**](/package.json#L6)
 >   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
 >   - ```  npm run dev  ```  [:link:](/package.json#L7)
 >   - or ```  wrangler dev  ```
