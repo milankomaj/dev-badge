@@ -35,7 +35,10 @@ async function routeHandler(ctx, handler) {
     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, HEAD',
     'dev-badge': `v.2.0-${country}-${ip}-${colo}-${http}-${tls}-${region}-${asn}-${method}`,
     'Access-Control-Allow-Origin': '*',
-    'X-Content-Type-Options': 'nosniff'
+    'X-Content-Type-Options': 'nosniff',
+    'Cache-Control': 'stale-if-error=60',
+    'Cloudflare-CDN-Cache-Control': 'stale-if-error=60',
+    'CDN-Cache-Control': 'stale-if-error=60'
   };
   ctx.status = 200;
   // console.log("👉 log:",hhPatch,Object.values(ctx.response.headers).toString())
