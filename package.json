@@ -23,7 +23,7 @@
   "dependencies": {
     "badgen": "^3.2.2",
     "byte-size": "^8.1.1",
-    "cloudworker-router": "^1.12.2",
+    "cloudworker-router": "<=1.12.2",
     "date-fns": "^2.30.0",
     "dev-badge-icon": "^1.0.16",
     "millify": "^6.1.0"
