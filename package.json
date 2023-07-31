@@ -21,7 +21,7 @@
   "author": "www",
   "license": "MIT",
   "dependencies": {
-    "badgen": "^3.2.2",
+    "badgen": "^3.2.3",
     "byte-size": "^8.1.1",
     "cloudworker-router": "<=1.12.2",
     "date-fns": "^2.30.0",
