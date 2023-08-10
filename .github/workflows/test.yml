@@ -28,6 +28,5 @@ jobs:
        postCommands: |
         wrangler secret list
         wrangler deployments list
-        wrangler --whoami
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
