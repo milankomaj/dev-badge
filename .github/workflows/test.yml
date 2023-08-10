@@ -24,9 +24,10 @@ jobs:
        command: deploy --dry-run
        preCommands: |
         wrangler --version
-        wrangler --whoami
         # wrangler secret:bulk ./example.secrets.json
        postCommands: |
         wrangler secret list
+        wrangler deployments list
+        wrangler --whoami
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
