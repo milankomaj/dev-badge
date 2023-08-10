@@ -1,0 +1,31 @@
+name: DeployDryRun
+on:
+  workflow_dispatch:
+  pull_request_target:
+    branches: '**'
+    types: [opened]
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+       node-version: 'latest'
+    - run: npm install --save
+
+    - name: Publish
+      uses: cloudflare/wrangler-action@3.0.1
+      with:
+       apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+       command: deploy --dry-run
+       preCommands: |
+        wrangler --version
+        # wrangler secret:bulk ./example.secrets.json
+       postCommands: |
+        wrangler secret list
+    env:
+     CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
