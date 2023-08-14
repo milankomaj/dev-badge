@@ -27,6 +27,6 @@ jobs:
         # wrangler secret:bulk ./example.secrets.json
        postCommands: |
         wrangler secret list
-        wrangler deployments list
+        # wrangler deployments list
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
