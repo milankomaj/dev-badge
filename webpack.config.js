@@ -52,7 +52,15 @@ if (mode === "production") {
       ]
     },
     plugins: [
-      new webpack.ProgressPlugin(),
+      new webpack.ProgressPlugin
+        ({
+          activeModules: false,
+          entries: true,
+          modules: true,
+          profile: true,
+          dependencies: true,
+          percentBy: 'entries',
+        })
     ]
   }
 } else {
