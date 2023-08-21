@@ -35,7 +35,6 @@ if (mode === "production") {
       minimize: true,
       minimizer: [
         new TerserPlugin({
-          minify: TerserPlugin.uglifyJsMinify,
           terserOptions: {
             format: {
               comments: false,
