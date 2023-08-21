@@ -35,6 +35,7 @@ if (mode === "production") {
       minimize: true,
       minimizer: [
         new TerserPlugin({
+          minify: TerserPlugin.uglifyJsMinify,
           terserOptions: {
             format: {
               comments: false,
@@ -52,15 +53,7 @@ if (mode === "production") {
       ]
     },
     plugins: [
-      new webpack.ProgressPlugin
-        ({
-          activeModules: false,
-          entries: true,
-          modules: true,
-          profile: true,
-          dependencies: true,
-          percentBy: 'entries',
-        })
+      new webpack.ProgressPlugin(),
     ]
   }
 } else {
