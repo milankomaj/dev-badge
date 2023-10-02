@@ -8,7 +8,7 @@ console.log("👉 MODE:", `\x1b[33m ${mode} \x1b[0m`);
 if (mode === "production") {
   //console.log = function () { };
   module.exports = {
-    stats: 'minimal',
+    stats: 'errors-warnings',
     mode: 'production',
     entry: './index.js',
     target: ["webworker", "es2021"],
