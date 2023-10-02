@@ -8,7 +8,7 @@ console.log("👉 MODE:", `\x1b[33m ${mode} \x1b[0m`);
 if (mode === "production") {
   //console.log = function () { };
   module.exports = {
-    stats: 'errors-warnings',
+    stats: 'minimal',
     mode: 'production',
     entry: './index.js',
     target: ["webworker", "es2021"],
@@ -52,15 +52,7 @@ if (mode === "production") {
       ]
     },
     plugins: [
-      new webpack.ProgressPlugin
-({
-  activeModules: false,
-  entries: true,
-  modules: true,
-  profile: true,
-  dependencies: true,
-  percentBy: 'entries',
-})
+      new webpack.ProgressPlugin(),
     ]
   }
 } else {
