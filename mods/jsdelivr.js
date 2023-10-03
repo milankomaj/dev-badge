@@ -17,9 +17,9 @@ async function handelJsdelivr({
       rank
     } = await resp.json();
 
- 
+
     //console.log("👉:",resp.status,rank,total,":👈")
-    
+
 
     switch (topic) {
 
@@ -41,8 +41,8 @@ async function handelJsdelivr({
             color: 'ff5627'
         }
     }
-    
-  } else {return errBadge;}
+
+  }  else { return { subject: "Response " + resp.status, status: resp.statusText, labelColor: "grey" } }
 
 }
 
