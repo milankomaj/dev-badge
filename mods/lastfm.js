@@ -22,7 +22,7 @@ async function handleLastfm({
         const endpoint2 = `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist=${encodeURIComponent(lastPartist)}&api_key=${LASTFM_KEY}&format=json`
         const resp2 = await fetch(endpoint2, { method: "get", headers: { "Cache-Control": "no-store" } });
         const { toptags } = await resp2.json();
-        const lastPgenre = (toptags.tag['0'].name);
+        const lastPgenre = (toptags.tag['0']) ? (toptags.tag['0'].name) : "";
         // console.log("👉 log:",lastPgenre)
         const lastPnow = (recenttracks.track['0']['@attr'])
 
