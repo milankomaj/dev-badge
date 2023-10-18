@@ -44,24 +44,24 @@ click G "https://github.com/codespaces"
 ---
 
 > #### Build localy.
-> - [ ] **Start**  [^note]
-> - :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
-> - :two: ``` npm run NpmInstall  ```  [:link:](/package.json#L11)
->   - or ```  npm install  ```
-> - :three: [**development:**](/package.json#L6)
->   - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
->   - ```  npm run dev  ```  [:link:](/package.json#L7)
->   - or ```  wrangler dev  ```
->     -   [*localhost:8787*](//localhost:8787)
-> - :four: [**production:**](/package.json#L8)
->   - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]
->   - ```  npm run pro  ```   [:link:](/package.json#L8)
->   - or ```  wrangler dev --remote  ```
->     -   [*localhost:8787*](//localhost:8787)
-> - :five: [**publish:**](/package.json)
->   - ```  npm run publish  ```   [:link:](/package.json#L10)
->   - or ```  wrangler deploy  ```
-> - [x] **Done**
+- [ ] **Start**  [^note]
+- :one: clone/download [repository](https://github.com/milankomaj/dev-badge)
+- :two: ``` npm run NpmInstall  ```  [:link:](/package.json#L11)
+  - or ```  npm install  ```
+- :three: [**development:**](/package.json#L6)
+  - complete your secrets/keys in [*.dev.vars*](/.dev.vars) file  [^1]
+  - ```  npm run dev  ```  [:link:](/package.json#L7)
+  - or ```  wrangler dev  ```
+    -   [*localhost:8787*](//localhost:8787)
+- :four: [**production:**](/package.json#L8)
+  - complete your secrets/keys in [*example.secrets.json*](/example.secrets.json) file  [^1]
+  - ```  npm run pro  ```   [:link:](/package.json#L8)
+  - or ```  wrangler dev --remote  ```
+    -   [*localhost:8787*](//localhost:8787)
+- :five: [**publish:**](/package.json)
+  - ```  npm run publish  ```   [:link:](/package.json#L10)
+  - or ```  wrangler deploy  ```
+ - [x] **Done**
 
 [^1]: some services/[*mods*](dev-badge/tree/master/mods) need secrets/keys :key:
 [^note]:
