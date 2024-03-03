@@ -16,10 +16,10 @@ flowchart LR
 
 A>Build`s on Github.] ==> |"#10067;"| B
 X("secrets/keys") .->|"{#133;}"|B(("🟢"))
-G("#10094;#10095;  Code #9207; Codespaces") <.-> B(("🟢"))
+G(Code - Codespaces) <.-> B(("🟢"))
 B(("🟢")) --> C("Deploy with Workers")
-B(("🟢")) --> D("#10971; Fork #9207; ")
-B(("🟢")) --> E("Use this template #9207;")
+B(("🟢")) --> D(Fork)
+B(("🟢")) --> E(Use this template)
 C & D & E -..-> |"additional steps"| F("Run workflow")
 
 
