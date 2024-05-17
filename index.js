@@ -33,7 +33,7 @@ async function routeHandler(ctx, handler) {
     'CDN-Cache-Control': `max-age=${_hh ? _hh : config.defaultCacheDurationSecond}, stale-if-error=60`,
     'Cache-Control': `max-age=${_hh ? _hh : config.defaultCacheDurationSecond},immutable, s-max-age=${_hh ? _hh : config.defaultCacheDurationSecond}, stale-if-error=60`,
     'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, HEAD',
-    'dev-badge': `v.2.0-${country}-${ip}-${colo}-${http}-${tls}-${region}-${asn}-${method}`,
+    'dev-badge': `v.2.0-${country}-${ip}-${colo}-${http}-${tls}-${asn}-${method}`,
     'Access-Control-Allow-Origin': '*',
     'X-Content-Type-Options': 'nosniff'
   };
