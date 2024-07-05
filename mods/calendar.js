@@ -1,7 +1,7 @@
 // http://localhost:8787/calendar/today
 // http://localhost:8787/calendar/12-oktober
 async function handleCalendar({ topic }) {
-    const endpoint = 'https://raw.githubusercontent.com/milankomaj/data/main/namedays/names_days_min.json'
+    const endpoint = 'https://raw.githubusercontent.com/milankomaj/site-dev-badge/master/names_days/names_days_min.json'
     const resp = await fetch(endpoint, {
         method: "GET",
         cf: {
