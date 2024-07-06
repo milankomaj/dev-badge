@@ -172,7 +172,12 @@ async function handleGitHub({ topic, owner, repo }, options) {
       case "release":
         const opts = await getLatestRelease({ owner, repo, channel: "stable" });
         return opts;
-
+      default:
+        return {
+          subject: topic,
+          status: "unknown",
+          color: "grey",
+        };
     }
   } catch (e) { console.log("👉 e.message:", e.message); return { subject: topic, status: e.message, labelColor: "grey" } }
 
