@@ -149,35 +149,33 @@ async function getLatestRelease({ owner, repo, channel }) {
 }
 
 async function handleGitHub({ topic, owner, repo }, options) {
-  switch (topic) {
-    case "releases":
-    case "tags":
-    case "stars":
-    case "PR":
-    case "open-PR":
-    case "closed-PR":
-    case "merged-PR":
-    case "issues":
-    case "open-issues":
-    case "closed-issues":
-    case "forks":
-    case "watchers":
-      const info = await queryRepoStats({ topic, owner, repo });
-      return {
-        subject: topic,
-        status: String(info[topicMap[topic]].totalCount),
-        color: "blue",
-      };
-    case "release":
-      const opts = await getLatestRelease({ owner, repo, channel: "stable" });
-      return opts;
-    default:
-      return {
-        subject: topic,
-        status: "unknown",
-        color: "grey",
-      };
-  }
+  try {
+    switch (topic) {
+      case "releases":
+      case "tags":
+      case "stars":
+      case "PR":
+      case "open-PR":
+      case "closed-PR":
+      case "merged-PR":
+      case "issues":
+      case "open-issues":
+      case "closed-issues":
+      case "forks":
+      case "watchers":
+        const info = await queryRepoStats({ topic, owner, repo });
+        return {
+          subject: topic,
+          status: String(info[topicMap[topic]].totalCount),
+          color: "blue",
+        };
+      case "release":
+        const opts = await getLatestRelease({ owner, repo, channel: "stable" });
+        return opts;
+
+    }
+  } catch (e) { console.log("👉 e.message:", e.message); return { subject: topic, status: e.message, labelColor: "grey" } }
+
 }
 
 export default handleGitHub;
