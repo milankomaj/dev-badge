@@ -4,6 +4,10 @@ on:
   pull_request_target:
     branches: '**'
     types: [opened]
+  push:
+    branches: [ master ]
+    paths:
+    - '**.js'
 
 
 jobs:
