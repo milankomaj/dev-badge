@@ -8,11 +8,11 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     open-pull-requests-limit: 10
-    versioning-strategy: increase
     schedule:
       interval: "weekly"
       day: "friday"
       time: "11:00"
+    versioning-strategy: increase 
       
 # Set update schedule for GitHub Actions
   - package-ecosystem: "github-actions"
