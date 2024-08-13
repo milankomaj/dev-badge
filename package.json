@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "badgen": "^3.2.3",
-    "byte-size": "^8.1.1",
+    "byte-size": "^9.0.0",
     "cloudworker-router": "<=1.12.2",
     "date-fns": "^3.6.0",
     "dev-badge-icon": "^1.0.17",
