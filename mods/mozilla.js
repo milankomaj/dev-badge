@@ -52,7 +52,7 @@ async function handleMozilla({
     const startfn = (formatDistanceToNow(new Date(start), { addSuffix: true })); // date-fns
     // const endfn = (formatDistanceToNow(new Date(end), { addSuffix: true })); // date-fns
     const dif = differenceInSeconds(new Date(end), new Date(start)); // date-fns
-    //console.log("👉:", "cl=", cl, "letter=", letter, "end=", end, "start=", start, "endfn=", endfn, "dif=", dif, ":👈")
+    //console.log("👉:", "letter=", letter, "end=", end, "start=", start, "dif=", dif, ":👈")
     const colorMap = {
       a: '34af00',
       b: 'green',
