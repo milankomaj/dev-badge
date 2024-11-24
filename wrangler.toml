@@ -1,13 +1,9 @@
 name = "dev-badge"
-main = "./dist/worker.js" #
-# main = "./index.js" #
-# account_id = "****"
+main = "./dist/worker.js"
 workers_dev = true
 compatibility_date = "2022-08-04"
 send_metrics = false
 
-[placement]
-mode = "smart"
 
 # PRODUCTION #
 [env.production]
@@ -39,7 +35,6 @@ local_protocol = "http"
 upstream_protocol = "https"
 
 [vars]
-
+ #
 [build]
-command = "npm run build"
-watch_dir = "./mods"
+ #
