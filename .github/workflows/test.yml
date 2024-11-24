@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 'latest', 'current', 'node' ]
+        node: [ 'latest', '18', '20', '22' ]
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4
