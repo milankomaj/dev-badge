@@ -6,6 +6,8 @@ workers_dev = true
 compatibility_date = "2022-08-04"
 send_metrics = false
 
+[placement]
+mode = "smart"
 
 # PRODUCTION #
 [env.production]
@@ -21,7 +23,7 @@ watch_dir = "./mods"
 # DEVELOPEMT #
 [env.development]
 main = "./dist/development_worker.js" #
-# main = "./index.js" # 
+# main = "./index.js" #
 
 [env.development.vars]
 
