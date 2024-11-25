@@ -3,7 +3,7 @@ main = "./dist/worker.js" #
 # main = "./index.js" #
 # account_id = "****"
 workers_dev = true
-compatibility_date = "2024-09-02"
+compatibility_date = "2024-09-23"
 send_metrics = false
 
 [placement]
