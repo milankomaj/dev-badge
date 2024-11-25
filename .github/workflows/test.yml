@@ -23,7 +23,7 @@ jobs:
       with:
        node-version: ${{ matrix.node }}
     - run: npm install --save
-    - run: npm install wrangler@latest
+    # - run: npm install wrangler@latest
 
     - name: Publish
       uses: cloudflare/wrangler-action@v3
