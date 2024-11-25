@@ -22,7 +22,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
        node-version: ${{ matrix.node }}
-    - run: npm install --save --yes
+    - run: npm ci
 
     - name: Publish
       uses: cloudflare/wrangler-action@v3
