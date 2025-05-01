@@ -152,11 +152,13 @@ async function handleAmo({
             line: ['By Firefox', 'purple'],
             recommended: ['Recommended', 'ff9400'],
             spotlight: ['Spotlight', 'yellow'],
-            // sponsored: 'orange'
+            notable: ['Notable', 'blue'],
+            strategic: ['Strategic', 'green'],
+            // badged: ['badged', 'orange'],
           }
           const _ccm = categoryMap[category];
           //console.log("👉 //:", promoted['0'],promoted['0'].apps)
-
+          //https://mozilla.github.io/addons-server/topics/api/addons.html#addon-detail-promoted-category
           return {
             subject: (apps) + '',
             status: _ccm ? _ccm[0] : 'unknown',
