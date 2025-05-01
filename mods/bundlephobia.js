@@ -1,5 +1,5 @@
 import byteSize from "byte-size";
-import badgen from "../helpers/badge";
+
 
 async function handleBundlephobia({ topic, pkgName }, options) {
   const resp = await fetch(
