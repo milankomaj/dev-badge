@@ -146,8 +146,8 @@ async function handleAmo({
         };
       case 'add-on-flag':
         if (promoted != null) {
-          const apps = (promoted.apps);
-          const category = (promoted.category);
+          const apps = (promoted['0'].apps);
+          const category = (promoted['0'].category);
           const categoryMap = {
             line: ['By Firefox', 'purple'],
             recommended: ['Recommended', 'ff9400'],
@@ -155,7 +155,7 @@ async function handleAmo({
             // sponsored: 'orange'
           }
           const _ccm = categoryMap[category];
-          //console.log("👉 //:", promoted,promoted.apps)
+          //console.log("👉 //:", promoted['0'],promoted['0'].apps)
 
           return {
             subject: (apps) + '',
