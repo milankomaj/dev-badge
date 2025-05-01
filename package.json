@@ -22,15 +22,15 @@
   "license": "MIT",
   "dependencies": {
     "badgen": "^3.2.3",
-    "byte-size": "^9.0.0",
+    "byte-size": "^9.0.1",
     "cloudworker-router": "<=1.12.2",
     "date-fns": "^4.1.0",
     "dev-badge-icon": "^1.0.17",
     "millify": "^6.1.0"
   },
   "devDependencies": {
-    "terser-webpack-plugin": "^5.3.10",
-    "webpack": "^5.96.1",
-    "webpack-cli": "^5.1.4"
+    "terser-webpack-plugin": "^5.3.12",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
   }
 }
