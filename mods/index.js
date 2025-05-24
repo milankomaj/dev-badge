@@ -4,7 +4,6 @@ import bundlephobia from "./bundlephobia";
 import docker from "./docker";
 import github from "./github";
 import npm from "./npm";
-import packagephobia from "./packagephobia";
 import travis from "./travis";
 import vsmarketplace from "./vs-marketplace";
 import amo from "./amo";
@@ -26,7 +25,6 @@ export {
   docker,
   github,
   npm,
-  packagephobia,
   travis,
   vsmarketplace,
   amo,

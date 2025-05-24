@@ -55,9 +55,6 @@ const handlerMap = {
 
   '/bundlephobia/:topic/:pkgName': handlers.bundlephobia,
 
-  '/packagephobia/:topic/:pkgName': handlers.packagephobia,
-  '/packagephobia/:topic/:scope/:pkgName': handlers.packagephobia,
-
   '/travis/:user/:repo/:branch': handlers.travis,
   '/travis/:user/:repo': handlers.travis,
 
