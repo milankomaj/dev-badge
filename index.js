@@ -1,4 +1,4 @@
-import Router from 'cloudworker-router';
+import Router from './router';
 import config from './config';
 import badgen from './helpers/badge';
 import * as handlers from './mods';
