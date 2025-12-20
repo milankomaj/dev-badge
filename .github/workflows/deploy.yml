@@ -12,7 +12,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - uses: actions/setup-node@v6
       with:
        node-version: 'latest'
