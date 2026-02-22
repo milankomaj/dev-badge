@@ -22,7 +22,7 @@ jobs:
       uses: cloudflare/wrangler-action@v3
       with:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-       command: deploy
+       command: deploy --env=""
        preCommands: |
         wrangler --version
         # wrangler secret:bulk ./example.secrets.json
