@@ -30,7 +30,7 @@ jobs:
       with:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
        # wranglerVersion: "latest"
-       command: deploy --dry-run
+       command: deploy --dry-run --env="production"
        preCommands: |
         wrangler --version
         # wrangler secret:bulk ./example.secrets.json
@@ -39,4 +39,4 @@ jobs:
         # wrangler deployments list
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-     FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+     
