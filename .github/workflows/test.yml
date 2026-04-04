@@ -17,8 +17,6 @@ jobs:
       matrix:
         node: [ 'latest', '18', '20', '22', '24' ]
     timeout-minutes: 10
-    env:
-        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
     - uses: actions/checkout@v6
     - uses: actions/setup-node@v6
@@ -41,3 +39,4 @@ jobs:
         # wrangler deployments list
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+     FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
