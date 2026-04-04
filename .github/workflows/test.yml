@@ -39,4 +39,4 @@ jobs:
         # wrangler deployments list
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-     
+     WRANGLER_LOG: debug
