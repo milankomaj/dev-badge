@@ -19,7 +19,7 @@ jobs:
     - run: npm install --save
 
     - name: Publish
-      uses: cloudflare/wrangler-action@v3
+      uses: cloudflare/wrangler-action@v4
       with:
        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
        command: deploy --env="production"
