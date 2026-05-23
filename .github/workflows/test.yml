@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 'latest', '18', '20', '22', '24' ]
+        node: [ 'latest', '22', '24' ]
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v6
@@ -39,4 +39,3 @@ jobs:
         # wrangler deployments list
     env:
      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-     
